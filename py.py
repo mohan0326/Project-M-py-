@@ -38,7 +38,7 @@ def login():
     if users.get(username) == hashed:
         print("Login successful!")
     else:
-        print("Invalid username or password.")
+        print("Invalid username / password.")
 
 def main():
     while True:
