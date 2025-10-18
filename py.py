@@ -21,11 +21,11 @@ def save_user(username, hashed_password):
 
 def register():
     users = load_users()
-    username = input("Choose a username: ").strip()
+    username = input("Choose any username: ").strip()
     if username in users:
         print("Username already exists.")
         return
-    password = input("Choose a password: ").strip()
+    password = input("Choose any password: ").strip()
     hashed = hash_password(password)
     save_user(username, hashed)
     print("Registration successful.")
