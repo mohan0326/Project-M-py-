@@ -43,7 +43,7 @@ def login():
 def main():
     while True:
         print("\n1. Register\n2. Login\n3. Exit")
-        choice = input("Select an option: ")
+        choice = input("Select any one option: ")
         if choice == '1':
             register()
         elif choice == '2':
